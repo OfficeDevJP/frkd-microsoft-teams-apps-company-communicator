@@ -1,59 +1,73 @@
-# Company Communicator App Template
+**Microsoft Teams アプリ**
+# Company Communicator テンプレート
 
-| [Documentation](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide) | [Deployment guide powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell)  | [Architecture](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) |
-| ---- | ---- | ---- | ---- |
+(Microsoft Teams App - Company Communicator)
+<p align="center">	
+<img alt="download" src="https://img.shields.io/github/downloads/OfficeDevJP/microsoft-teams-apps-company-communicator/total?color=brightgreen.svg"/>	
+</p>
 
-Company Communicator is a custom Teams app that enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate. Use this template for multiple scenarios, such as new initiative announcements, employee onboarding, modern learning and development, or organization-wide broadcasts. 
+## はじめに
 
-The app provides an easy interface for designated users to create, preview, collaborate and send messages. It's also a foundation for building custom targeted communication capabilities, such as custom telemetry on how many users acknowledged or interacted with a message.
+**アプリケーション概要**
 
-![Company Communicator compose message screen](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/images/CompanyCommunicatorCompose.png)
+Company Communicator は、組織内の大勢に向けたメッセージを簡単に配信することが可能な Teams のカスタム アプリです。
+このアプリは、組織全体へのメッセージ配信や、一部のチームに向けた連絡方法として、複数のシナリオで活用することができます。 
 
-### Key features
-* **Message creation:** Easily create messages by using a team tab where team members who are permissioned can collaborate and create messages.
-* **Audience selection:** Pick from four options to target audience. Send to general channel of selected teams, send in 1:1 chat to members of selected teams, send to all users who have the app installed or send to M365 groups, distribution lists or security groups.
-* **Message metrics:** Export messages delivery report.
-* **Localization:** Supports multiple locales.
-## Get started
+## 主な機能
 
-Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) to read about what the app does and how it works.
+**メッセージ配信**
+ - 管理者から配信者に指定されたユーザーは、このアプリを使用してメッセージを簡単に作成できます。
+ - 配信先は、4つのオプションから選択できます。
+1. 特定のチームのチャネルに送信する
+2. 特定のチーム内のユーザーへ個別にチャットを送信する
+3. すべてのユーザーに個別にチャットを送信する
+4. M365グループ、配信グループまたは、セキュリティグループを指定して、所属しているメンバーにチャットを送信）
 
-When you're ready to try out Company Communicator, or to use it in your own organization, you can choose to follow one of the below guides.
-* [Deployment guide](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide).
-* [Deployment guide powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell).  
-  
-## Feedback
+**メッセージ管理**
+ - 下書きとして、送信前のメッセージを保存できます。
+ - 既存のメッセージから複製ができます。
+ - メッセージのプレビューができます。
+ - メッセージの配信レポートをエクスポートすることができます。
 
-Thoughts? Questions? Ideas? Share them with us on [Teams UserVoice](https://microsoftteams.uservoice.com/forums/555103-public)!
+## 構成内容
+本書には、次の内容が含まれています。
+ 1. [管理者向け展開ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide.pdf)
+ 2. [管理者向け展開ガイド（PowerShell版）](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide_PowerShell.pdf)
+ 3. [ユーザー向け操作ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_User_Guide.pdf)
 
-Please report bugs and other code issues [here](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/issues/new).
+### 管理者向け展開ガイド
+Company Communicator を展開するために必要な手順を、Microsoft Azure Portal を使用した操作方法で記載をしています。<br>Powershell を使用した展開方法は管理者向け展開ガイド（PowerShell版）をご参照ください。
 
-## Legal notice
+### 管理者向け展開ガイド（PowerShell版）
+Company Communicator を展開するために必要な手順を、PowerShell を使用した操作方法で記載しています。
 
-This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+### ユーザー向け操作ガイド
+Company Communicator の機能概要や、メッセージの送信を行う際の操作手順を記載しています。
 
-- You, not Microsoft, will license the use of your app to users or organization. 
+## 準備されている言語
+このアプリは、以下の言語に対応しています。
+1. ar-SA
+2. de-DE
+3. en-US
+4. es-ES
+5. fr-FR
+6. he-IL
+7. ja-JP
+8. ko-KR
+9. pt-BR
+10. ru-RU
+11. zh-CN
+12. zh-TW  
 
-- This app template is not intended to substitute your own regulatory due diligence or make you or your app compliant with respect to any applicable regulations, including but not limited to privacy, healthcare, employment, or financial regulations.
+## 展開・利用に必要な条件
+Company Communicator を使用するには、Microsoft Teams および Microsoft Azure のサブスクリプションが必要です。
 
-- You are responsible for complying with all applicable privacy and security regulations including those related to use, collection and handling of any personal data by your app. This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization. Where applicable, you may be responsible for data related incidents or data subject requests for data collected through your app.
+また、有償の Azure サービス プランを利用します。
+詳しくは下記をご参照いただくか、日本マイクロソフト担当者までお問い合わせください。
+[https://azure.microsoft.com/ja-jp/pricing/](https://azure.microsoft.com/ja-jp/pricing/)
 
-- Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository. Microsoft’s general trademark guidelines can be found [here](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
+## 利用方法および展開方法
+利用方法：[ユーザー向け操作ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_User_Guide.pdf)をご参照ください。
 
-- If the app template enables access to any Microsoft Internet-based services (e.g., Office365), use of those services will be subject to the separately-provided terms of use. In such cases, Microsoft may collect telemetry data related to app template usage and operation. Use and handling of telemetry data will be performed in accordance with such terms of use.
-
-- Use of this template does not guarantee acceptance of your app to the Teams app store. To make this app available in the Teams app store, you will have to comply with the [submission and validation process](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish), and all associated requirements such as including your own privacy statement and terms of use for your app.
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+展開方法：[管理者向け展開ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide.pdf)
+または、[管理者向け展開ガイド（PowerShell版）](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide_PowerShell.pdf)をご参照ください。
