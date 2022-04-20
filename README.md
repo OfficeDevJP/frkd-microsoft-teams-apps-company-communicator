@@ -1,73 +1,71 @@
-**Microsoft Teams アプリ**
-# Company Communicator テンプレート
+# Company Communicator App Template
 
-(Microsoft Teams App - Company Communicator)
-<p align="center">	
-<img alt="download" src="https://img.shields.io/github/downloads/OfficeDevJP/microsoft-teams-apps-company-communicator/total?color=brightgreen.svg"/>	
-</p>
+| [ドキュメント](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki) | [展開ガイド powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell)  |[展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide) | [展開ガイド certificate](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate) | [アーキテクチャ](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) |
+| ---- | ---- | ---- | ---- | ---- |
 
-## はじめに
+Company Communicatorは、企業チームの複数のチームまたは大勢の従業員向けのメッセージをチャットして作成および送信できるようにするカスタムTeamsアプリであり、組織が共同作業を行うさいに従業員に連絡できるようにします。 このテンプレートは、新しいイニシアチブの発表、従業員のオンボーディング、最新の学習と能力開発、組織全体のブロードキャストなど、複数のシナリオで使用します。
 
-**アプリケーション概要**
+このアプリは、指定されたユーザーがメッセージを作成、プレビュー、共同作業、送信するための簡単なインターフェイスを提供します。また、メッセージに同意または対話したユーザーの数に関するカスタム テレメトリなど、カスタムのターゲットを絞った通信機能を構築するための基盤にもなります。
 
-Company Communicator は、組織内の大勢に向けたメッセージを簡単に配信することが可能な Teams のカスタム アプリです。
-このアプリは、組織全体へのメッセージ配信や、一部のチームに向けた連絡方法として、複数のシナリオで活用することができます。 
+![Company Communicator compose message screen](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/images/CompanyCommunicatorCompose.png)
 
-## 主な機能
+### キーとなる機能
+* **メッセージの作成:** [チーム] タブを使用して、アクセス許可を持つチーム メンバーが共同作業やメッセージを簡単に作成できます。
 
-**メッセージ配信**
- - 管理者から配信者に指定されたユーザーは、このアプリを使用してメッセージを簡単に作成できます。
- - 配信先は、4つのオプションから選択できます。
-1. 特定のチームのチャネルに送信する
-2. 特定のチーム内のユーザーへ個別にチャットを送信する
-3. すべてのユーザーに個別にチャットを送信する
-4. M365グループ、配信グループまたは、セキュリティグループを指定して、所属しているメンバーにチャットを送信）
+* **オーディエンスの選択:** 対象となるオーディエンスを 4 つのオプションから選択します。選択したチームの一般チャネルに送信するか、選択したチームのメンバーに 1：1 のチャットで送信するか、アプリをインストールしているすべてのユーザーに送信するか、M365グループ、配布リスト、またはセキュリティグループに送信します。
+* **メッセージのメトリクス:** メッセージ配信レポートをエクスポートします。
+* **ローカライゼーション:** 複数のロケールをサポートしています。
+## はじめかた
 
-**メッセージ管理**
- - 下書きとして、送信前のメッセージを保存できます。
- - 既存のメッセージから複製ができます。
- - メッセージのプレビューができます。
- - メッセージの配信レポートをエクスポートすることができます。
+はじめに [ソリューションの概要](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) を使用して、アプリの動作と動作について説明します
 
-## 構成内容
-本書には、次の内容が含まれています。
- 1. [管理者向け展開ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide.pdf)
- 2. [管理者向け展開ガイド（PowerShell版）](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide_PowerShell.pdf)
- 3. [ユーザー向け操作ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_User_Guide.pdf)
+会社のコミュニケーターを使ってみる準備ができたら、または自分の組織で使用する準備ができたら、以下のいずれかのガイドを選択することができます。
 
-### 管理者向け展開ガイド
-Company Communicator を展開するために必要な手順を、Microsoft Azure Portal を使用した操作方法で記載をしています。<br>Powershell を使用した展開方法は管理者向け展開ガイド（PowerShell版）をご参照ください。
+* [展開ガイド powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell).
+    * **推奨** Powershell スクリプトを使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。セットアップ全体は、powershell スクリプトによって行われます。
+* [展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide).
+    * クライアント シークレットを使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。
+* [展開ガイド certificate](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate).
+    * 証明書を使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。
 
-### 管理者向け展開ガイド（PowerShell版）
-Company Communicator を展開するために必要な手順を、PowerShell を使用した操作方法で記載しています。
+## 旧バージョンからの移行 
 
-### ユーザー向け操作ガイド
-Company Communicator の機能概要や、メッセージの送信を行う際の操作手順を記載しています。
+すでに旧バージョンのCompany Communicatorがインストールされている場合は、こちらの [v5 移行ガイド](https://github.com/OfficeDev/microsoft-teams-apps-company-communicator/wiki/v5-migration-guide)を使用してください。Company Communicator バージョン 5.0 のようなメジャー バージョンアップには App Service と Azure Functions の同期以上のものが含まれることを意識し、最新のものに移行する前に移行ガイドを確認することを計画してください。
 
-## 準備されている言語
-このアプリは、以下の言語に対応しています。
-1. ar-SA
-2. de-DE
-3. en-US
-4. es-ES
-5. fr-FR
-6. he-IL
-7. ja-JP
-8. ko-KR
-9. pt-BR
-10. ru-RU
-11. zh-CN
-12. zh-TW  
+新しいバージョンへの移行 
 
-## 展開・利用に必要な条件
-Company Communicator を使用するには、Microsoft Teams および Microsoft Azure のサブスクリプションが必要です。
+ * [v5 移行ガイド](https://github.com/OfficeDev/microsoft-teams-apps-company-communicator/wiki/v5-migration-guide)
+ * [v4 移行ガイド](https://github.com/OfficeDev/microsoft-teams-apps-company-communicator/wiki/v4-migration-guide)
+ * [v3 移行ガイド](https://github.com/OfficeDev/microsoft-teams-apps-company-communicator/wiki/v3-migration-guide)
+ * [v2 移行ガイド](https://github.com/OfficeDev/microsoft-teams-apps-company-communicator/wiki/v2-migration-guide)
 
-また、有償の Azure サービス プランを利用します。
-詳しくは下記をご参照いただくか、日本マイクロソフト担当者までお問い合わせください。
-[https://azure.microsoft.com/ja-jp/pricing/](https://azure.microsoft.com/ja-jp/pricing/)
+## フィードバック
 
-## 利用方法および展開方法
-利用方法：[ユーザー向け操作ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_User_Guide.pdf)をご参照ください。
+意見？ 質問？ アイデア？ [Teams UserVoice](https://microsoftteams.uservoice.com/forums/555103-public)で共有してください！
 
-展開方法：[管理者向け展開ガイド](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide.pdf)
-または、[管理者向け展開ガイド（PowerShell版）](https://github.com/OfficeDevJP/microsoft-teams-apps-company-communicator/releases/download/v1.0.0/Company_Communicator_Deployment_Guide_PowerShell.pdf)をご参照ください。
+バグやその他のコードの問題は [こちら](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/issues/new) に報告してください。
+
+## Legal notice
+
+This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+
+- You, not Microsoft, will license the use of your app to users or organization. 
+
+- This app template is not intended to substitute your own regulatory due diligence or make you or your app compliant with respect to any applicable regulations, including but not limited to privacy, healthcare, employment, or financial regulations.
+
+- You are responsible for complying with all applicable privacy and security regulations including those related to use, collection and handling of any personal data by your app. This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization. Where applicable, you may be responsible for data related incidents or data subject requests for data collected through your app.
+
+- Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository. Microsoft’s general trademark guidelines can be found [here](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
+
+- If the app template enables access to any Microsoft Internet-based services (e.g., Office365), use of those services will be subject to the separately-provided terms of use. In such cases, Microsoft may collect telemetry data related to app template usage and operation. Use and handling of telemetry data will be performed in accordance with such terms of use.
+
+- Use of this template does not guarantee acceptance of your app to the Teams app store. To make this app available in the Teams app store, you will have to comply with the [submission and validation process](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish), and all associated requirements such as including your own privacy statement and terms of use for your app.
+
+## このプロジェクトに貢献するには
+
+このプロジェクトでは、寄稿や提案を歓迎します。ほとんどの寄稿では、あなたが寄稿物を使用する権利を有し、実際にそれを認めることを宣言する寄稿者ライセンス契約 (Contributor License Agreement : CLA) に同意することが必要です。 詳しくは https://cla.microsoft.com をご覧ください。
+
+プル リクエストを送信すると、CLA ボットは、CLAを提供し、PRを適切にデコレートする必要があるかどうかを自動的に判断します（例 : ラベル、コメントなど）。 ボットが提供する指示に従うだけなのでシンプルです。CLAを使用して、すべてのリポジトリでこれを1回だけ行う必要があります。 
+
+このプロジェクトは [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) を採用しています。
+詳細については、 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) を参照するか、追加の質問やコメントを [opencode@microsoft.com](mailto:opencode@microsoft.com) までお問い合わせください。
