@@ -1,6 +1,6 @@
 # Company Communicator App Template
 
-| [ドキュメント](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki) | [展開ガイド powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell)  |[展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide) | [展開ガイド certificate](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate) | [アーキテクチャ](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) |
+| [ドキュメント](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki) | [展開ガイド powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell)  |[展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide) | [展開ガイド 証明書](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate) | [アーキテクチャ](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) |
 | ---- | ---- | ---- | ---- | ---- |
 
 Company Communicatorは、企業チームの複数のチームまたは大勢の従業員向けのメッセージをチャットして作成および送信できるようにするカスタムTeamsアプリであり、組織が共同作業を行うさいに従業員に連絡できるようにします。 このテンプレートは、新しいイニシアチブの発表、従業員のオンボーディング、最新の学習と能力開発、組織全体のブロードキャストなど、複数のシナリオで使用します。
@@ -23,9 +23,9 @@ Company Communicatorは、企業チームの複数のチームまたは大勢の
 
 * [展開ガイド powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell).
     * **推奨** Powershell スクリプトを使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。セットアップ全体は、powershell スクリプトによって行われます。
-* [展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide).
+* [展開ガイド](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide)
     * クライアント シークレットを使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。
-* [展開ガイド certificate](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate).
+* [展開ガイド 証明書](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-certificate)
     * 証明書を使用してCompany Communicator v5.0 を展開するには、このオプションを使用します。
 
 ## 旧バージョンからの移行 
